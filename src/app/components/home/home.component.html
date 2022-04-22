@@ -1,0 +1,82 @@
+<div class="container-flow">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Gestor Documental</a>
+        <p class="text-right">{{ rol }} : {{ nombre_completo }}</p>
+        <button class="btn btn-danger" (click)="close_session()">Cerrar session</button>
+    </nav>
+</div>
+<div class="row">&nbsp;</div>
+<div class="container" *ngIf="administrador==true">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Parametrizacion</h4>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Radicador</h4>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Gestion</h4>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="radicador==true">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Radicador</h4>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Gestion</h4>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="gestion==true">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Gestion</h4>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
